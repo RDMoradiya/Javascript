@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menubar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="mnu.css" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="mnu mx-900px.css">
+  </head>
+  <body>
+</html>
+
+<div class="container">
+  <div class="navigation">
+    <h1 class="logo">
+      <a href="#"><i class="fas fa-truck-moving"></i>Transpolar</a>
+    </h1>
+<div class="men_barlist">
+    <ul >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li>
+        <a href="#">
+          
+           Blog <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+        <ul class="submenu">
+          <li><a href="#">Blog with Right Sidebar</a></li>
+          <li><a href="#">Blog with Left Sidebar</a></li>
+          <li><a href="#">Blog without Sidebar</a></li>
+          <li><a href="#">Blog Single with Right Sidebar</a></li>
+          <li><a href="#">Blog Single with Left Sidebar</a></li>
+          <li><a href="#">Blog with Right Sidebar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"
+          >Pages <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></span
+        ></a>
+        <ul class="sub_menu">
+          <li>
+            <a href="#"
+              >Email Template <i class="fa-solid fa-plus" style="font-size: 10px;"></i>
+              
+              
+              </a>
+            <ul class="sub_sub_menu">
+              <li><a href="#">Gmail</a></li>
+              <li><a href="#">Yahoo</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Shortcodes</a></li>
+          <li><a href="#">Landing Page</a></li>
+          <li><a href="#">Error Page</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <a href="#" class="search"
+        ><span class="fa-solid fa-magnifying-glass"></span
+      ></a>
+      <a href="#" class="theme"><span class="fa-solid fa-moon"></span></a>
+    </ul>
+  </div>
+  </div>
+  <button class="bar_button">
+    <a href="#" class="rs_nav"><i class="fa-solid fa-bars"></i></a>
+  </button>
+</div>
+
+<script>
+
+  // Menubar
+let menus = document.querySelector(".men_barlist");
+let disp = document.querySelector(".bar_button");
+
+disp.addEventListener("click", function () {
+  menus.classList.toggle("show_menu");
+});
+
+// Theme
+
+let icon=document.querySelector(".fa-moon")
+let pagebody=document.querySelector("body")
+
+icon.addEventListener("click",function(){
+  pagebody.classList.toggle("dark_mode");
+
+  if(pagebody.classList.contains("dark_mode")==true){
+    icon.innerHTML ="<span class='fa-solid fa-sun'></span>";
+    icon.classList.remove("fa-moon")
+  }else{
+    icon.innerHTML="<span class='fa-solid fa-moon'></span>"
+  }
+})
+</script>
+</body>

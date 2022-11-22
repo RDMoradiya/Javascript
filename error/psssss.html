@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pssss</title>
+  </head>
+
+  <body>
+    <form action="" onsubmit="return psd()">
+      <!-- Password -->
+      Password :-
+      <input type="password" id="pass" />
+
+      <!-- Show Password -->
+      <input type="checkbox" onclick="abc()" /> Show Password
+      <span id="ps" style="color: red; font-size: 10px"></span>
+      <br /><br />
+
+      <!-- Confirm password -->
+      Confirm password :-
+      <input type="password" id="cpass" />
+      <span id="cps1" style="color: red; font-size: 10px"></span>
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <!-- javascript -->
+
+    <script>
+      function psd() {
+        let pass = document.getElementById("pass");
+        let cpass = document.getElementById("cpass");
+        let passex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+
+        if (pass.value == "") {
+          document.getElementById("ps").innerHTML = "*Enter Password*";
+          return false;
+        } else if (pass.value.match(passex)) {
+          if (pass.value !== cpass.value) {
+            document.getElementById("cps1").innerHTML = "*Password not Match*";
+            return false;
+          } else {
+            document.getElementById("cps1").innerHTML = "";
+          }
+        } else {
+          document.getElementById("ps").innerHTML =
+            "** Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number";
+          document.getElementById("ps").style.color = "green";
+          return false;
+        }
+      }
+      function abc() {
+        let spass = document.getElementById("pass");
+        if (spass.type == "password") {
+          spass.type = "text";
+        } else {
+          spass.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>

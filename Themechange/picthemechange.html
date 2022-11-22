@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pictheme</title>
+    <link rel="icon" href="logo.png" />
+    <style>
+      .img {
+        width: 200px;
+        height: 200px;
+        background: url(sun.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .dark_mode {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="moon.jfif" alt="moon image" />
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fugiat
+    molestiae assumenda repudiandae qui explicabo, beatae quod? Distinctio sit
+    temporibus in, aperiam delectus quidem, atque blanditiis, officiis sapiente
+    rerum perferendis!
+
+    <script>
+      let icon = document.querySelector("img");
+      let theme = document.querySelector("body");
+
+      icon.addEventListener("click", function () {
+        theme.classList.toggle("dark_mode");
+
+        if (theme.classList.contains("dark_mode") == true) {
+          icon.src = "sun.png";
+        } else {
+          icon.src = "moon.jfif";
+        }
+      });
+    </script>
+  </body>
+</html>

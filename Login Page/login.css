@@ -1,0 +1,45 @@
+.loginpage {
+  border: 5px double rgb(153, 153, 196);
+  width: 250px;
+  height: 260px;
+  margin: auto;
+  margin-top: 150px;
+  background-image: url(background.webp);
+  background-size: cover;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+}
+label {
+  font-size: 13px;
+  color: rgb(110, 101, 101);
+}
+#unm,
+#ps {
+  border-radius: 10px;
+  border: 1px solid grey;
+  width: 100%;
+  font-size: 10px;
+  padding: 5px;
+}
+.login {
+  margin: 35px;
+}
+span {
+  color: red;
+  font-size: 10px;
+}
+#sbmt {
+  border: 1px solid rgb(145, 127, 127);
+  border-radius: 10px;
+  width: 100%;
+  color: rgb(71, 62, 62);
+  background-color: rgb(61, 189, 228);
+  margin-top: 5px;
+  font-weight: bold;
+  padding: 5px;
+}
+::placeholder {
+  font-size: 10px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outputs</title>
+    <link rel="icon" href="logo.png" />
+  </head>
+
+  <!-- JavaScript can "display" data in different ways:
+        Writing into an HTML element, using "innerHTML".
+        Writing into the HTML output using "document.write()".
+        Writing into an alert box, using "window.alert()".
+        Writing into the browser console, using "console.log()". -->
+
+  <body>
+    <h1>.innerHTML :-</h1>
+    <p id="demo">Paragraph</p>
+    <button onclick="fun()">click here</button>
+    <hr />
+    <script>
+      function fun() {
+        document.getElementById("demo").innerHTML =
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quia vel ad doloribus! Fugit quibusdam culpa neque ipsa blanditiis pariatur illum, quas ipsam ex fugiat a unde placeat nemo magni?";
+      }
+    </script>
+
+    <!-- Using document.write()
+        For testing purposes, it is convenient to use document.write(): -->
+    <h1>document.write() :-</h1>
+    <p id="note">
+      Never call document.write after the document has finished loading. It will
+      overwrite the whole document.
+    </p>
+    <script>
+      document.write("hello world");
+      document.getElementById("note").style.color = "red";
+    </script>
+    <hr />
+
+    <!-- Using document.write() after an HTML document is loaded, will delete all existing HTML: -->
+
+    <h2>My First Web Page</h2>
+    <p id="dm">
+      Using "document.write()" <u>after</u> an HTML document is loaded, will
+      delete all existing HTML:
+    </p>
+
+    <button type="button" onclick="document.write('hello world')">
+      Try it
+    </button>
+    <script>
+      document.getElementById("dm").style.color = "red";
+    </script>
+    <hr />
+
+    <!-- JavaScript "Print" -->
+    <!-- JavaScript does not have any print object or print methods.
+        You cannot access output devices from JavaScript.
+        The only exception is that you can call the "window.print()" method in the browser to print the content of the current window. -->
+
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button>
+    <hr />
+  </body>
+</html>

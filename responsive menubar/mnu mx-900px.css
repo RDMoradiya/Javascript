@@ -1,0 +1,99 @@
+/* Media */
+
+@media (max-width: 900px) {
+  .bar_button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    display: block;
+    border-radius: 10px;
+    background-color: aqua;
+    box-shadow: 3px 3px 5px black;
+  }
+
+  .men_barlist {
+    display: none;
+  }
+  .show_menu {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 15px;
+  }
+  .navigation ul li {
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+  }
+  .navigation .submenu {
+    display: none;
+  }
+  .navigation ul :hover .submenu {
+    display: block;
+    background-color: rgb(143, 170, 229);
+    border-radius: 15px;
+    width: 260px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+    top: 50px;
+  }
+  .navigation .sub_menu {
+    display: none;
+  }
+  .navigation ul :hover .sub_menu {
+    display: block;
+    background-color: rgb(143, 170, 229);
+    border-radius: 15px;
+    width: 155px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+    top: 100px;
+  }
+  .sub_menu li a {
+    display: block;
+    width: 145px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .sub_sub_menu {
+    display: none;
+  }
+  .sub_sub_menu li a {
+    display: block;
+    width: 70px;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  .navigation ul ul li:hover .sub_sub_menu {
+    display: block;
+    width: 90px;
+    left: -91px;
+    background-color: rgb(143, 170, 229);
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+    display: none;
+  }
+  .theme {
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: 35px;
+    font-size: 20px;
+  }
+}

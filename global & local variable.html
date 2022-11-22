@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global & Local Variable</title>
+    <link rel="icon" href="logo.png" />
+  </head>
+  <body>
+    <!-- Global variable  -->
+    <!-- 1.which is out side the function
+         2.global variable use in out side and in side of the function-->
+    <script>
+      let x = 25;
+      function print() {
+        document.write(x);
+      }
+      print();
+      document.write("<br>");
+      document.write(x); //global variable work inside and outside the function
+    </script>
+
+    <hr />
+    <!-- local variable  -->
+    <!-- 1.which is in side the function
+         2.local variable not use in out side of the function -->
+    <script>
+      function print() {
+        let z = 25;
+        document.write(z);
+      }
+      print();
+      document.write("<br>");
+      document.write(z); //local variable not work outside the function
+    </script>
+  </body>
+</html>

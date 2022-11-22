@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas</title>
+    <link rel="icon" href="logo.png" />
+    <style>
+      #rec_cnvas {
+        /* height: 400px; */
+        /* width: 400px; */
+        border: 2px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas height="400px" width="400px" id="rec_cnvas"></canvas>
+
+    <script>
+      let rect = document.getElementById("rec_cnvas");
+
+      // --> drawing object <-- //
+
+      //    getContext("2d")     --> C = capital
+      let drect = rect.getContext("2d");
+
+      // --> draw the canvas <-- //
+
+      //   fillStyle = "color"    --> S = capital
+      drect.fillStyle = "green";
+
+      //   ftllRect(X1,Y1,X2,Y2)    --> R = capital
+      drect.fillRect(50, 50, 300, 300);
+    </script>
+  </body>
+</html>
