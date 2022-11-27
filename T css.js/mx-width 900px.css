@@ -1,0 +1,127 @@
+/* Media */
+
+@media (max-width: 900px) {
+  .bar_button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.637);
+    box-shadow: 1px 1px 3px orangered;
+  }
+
+  .men_barlist {
+    display: none;
+  }
+  .show_menu {
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.637);
+    border: 1px solid orangered;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px orangered;
+  }
+  .navigation ul li {
+    width: 98px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+  }
+
+  .navigation .submenu {
+    display: none;
+  }
+  .navigation ul :hover .submenu {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 15px;
+    width: 220px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 100px;
+    top: 50px;
+    border: 1px solid orangered;
+  }
+  .navigation .sub_menu {
+    display: none;
+  }
+  .navigation ul :hover .sub_menu {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 15px;
+    width: 130px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 99px;
+    top: 100px;
+    box-shadow: 1px 1px 5px orangered;
+  }
+  .sub_menu li a {
+    display: block;
+    width: 128px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .sub_sub_menu {
+    display: none;
+  }
+  .sub_sub_menu li a {
+    display: block;
+    width: 63px;
+    padding: 0px 10px;
+  }
+  .navigation ul ul li:hover .sub_sub_menu {
+    display: block;
+    width: 65px;
+    left: -67px;
+    background-color: rgba(0, 0, 0, 0.637);
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search {
+    display: none;
+  }
+  .theme {
+    display: block;
+    position: absolute;
+    top: -33px;
+    right: 35px;
+    font-size: 20px;
+  }
+  #icon_left {
+    position: absolute;
+    left: 15px;
+    top: 100px;
+    display: block;
+  }
+  .fa-caret-down {
+    display: none;
+  }
+  #icon_left_1 {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 130px;
+  }
+  .fa-caret-right {
+    display: none;
+  }
+  #icon_left_2 {
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 12px;
+  }
+}

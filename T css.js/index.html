@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templates</title>
+    <link rel="icon" href="logo.png">
+
+    <!-- jQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bxSlider (4.2.14) -->
+
+    <!-- JavaScript only -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.14/jquery.bxslider.min.js"></script>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.14/jquery.bxslider.css"/>
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- css file max-width: 900px  link-->
+    <link rel="stylesheet" href="mx-width 900px.css">
+
+    <!-- slider jQuery code-->
+    <script>
+      $(function () {
+        $(".slide-container").bxSlider({
+          // mode: "fade",
+          // autometically img scroll -- ( auto : true )
+          auto: true,
+        });
+      });
+    </script>
+
+  </head>
+  <body onscroll="menubar_fix()">
+
+    <!-- navigation-Bar -->
+    <div class="container">
+    <div class="navigation">
+    <h1 class="logo">
+      <a href="#" class="trans"><i class="fas fa-truck-moving"></i><span ">Transpolar</span> </a>
+    </h1>
+  <div class="men_barlist">
+    <ul>
+      <li><a href="#" id="navtext" style="color: orangered;">Home</a></li>
+      <li><a href="#" id="navtext">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li>
+        <a href="#"><i class="fa-solid fa-caret-left" id="icon_left" style="font-size: 10px;"></i>Blog <i class="fa-solid fa-caret-down" style="font-size: 10px;"></i></a>
+        <ul class="submenu">
+          <li><a href="#">Blog with Right Sidebar</a></li>
+          <li><a href="#">Blog with Left Sidebar</a></li>
+          <li><a href="#">Blog without Sidebar</a></li>
+          <li><a href="#">Blog Single with Right Sidebar</a></li>
+          <li><a href="#">Blog Single with Left Sidebar</a></li>
+          <li><a href="#">Blog with Right Sidebar</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-caret-left" id="icon_left_1" style="font-size: 10px;"></i>Pages <i class="fa-solid fa-caret-down" style="font-size: 10px;"></i></span
+        ></a>
+        <ul class="sub_menu">
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-caret-left" id="icon_left_2" style="font-size: 10px;"></i>&nbspEmail Template <i class="fa-solid fa-caret-right" style="font-size: 10px;"></i>
+              
+              
+              </a>
+            <ul class="sub_sub_menu">
+              <li><a href="#">Gmail</a></li>
+              <li><a href="#">Yahoo</a></li>
+            </ul>
+          </li>
+          <li><a href="#">&nbspShortcodes</a></li>
+          <li><a href="#">&nbspLanding Page</a></li>
+          <li><a href="#">&nbspError Page</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+      <a href="#" class="search"
+        ><span class="fa-solid fa-magnifying-glass"></span
+      ></a>
+      <a href="#" class="theme"><span class="fa-solid fa-moon"></span></a>
+    </ul>
+  </div>
+    </div>
+    <button class="bar_button">
+    <a href="#" class="rs_nav"><i class="fa-solid fa-bars"></i></a>
+    </button>
+    </div>
+
+
+    <!-- Bxslider -->
+    <div class="slide-container">
+      <!-- slide-1 -->
+      <div class="slide">
+        <img src="1.jpg" alt="" />
+        <div class="caption">
+          <h3>MAKE THE RIGHT MOVE.</h3>
+          <h1 class="title-hero-19">
+            Moving Your<br />
+            Products Across All <br />Borders.
+          </h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-2 -->
+      <div class="slide">
+        <img src="2.jpg" alt="" />
+        <div class="caption">
+          <h3>GO SMOOTHLY WITH SAFETY.</h3>
+          <h1>We Are Here To Move <br />Your Buiness.</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-3 -->
+      <div class="slide">
+        <img src="3.jpg" alt="" />
+        <div class="caption">
+          <h3>MAKE THE RIGHT MOVE.</h3>
+          <h1 class="title-hero-19">
+            Moving Your<br />
+            Products Across All <br />Borders.
+          </h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-4 -->
+      <div class="slide">
+        <img src="4.jpg" alt="" />
+        <div class="caption">
+          <h3>GO SMOOTHLY WITH SAFETY.</h3>
+          <h1>We Are Here To Move <br />Your Buiness.</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+    
+    <br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br>
+
+    <!-- responsive menubar JS -->
+    <script>
+
+      // Menubar
+    let menus = document.querySelector(".men_barlist");
+    let disp = document.querySelector(".bar_button");
+    
+    disp.addEventListener("click", function () {
+      menus.classList.toggle("show_menu");
+    });
+    
+    // Theme
+    
+    let icon=document.querySelector(".fa-moon")
+    let pagebody=document.querySelector("body")
+    
+    icon.addEventListener("click",function(){
+      pagebody.classList.toggle("dark_mode");
+    
+      if(pagebody.classList.contains("dark_mode")==true){
+        icon.innerHTML ="<span class='fa-solid fa-sun'></span>";
+        icon.classList.remove("fa-moon")
+      }else{
+        icon.innerHTML="<span class='fa-solid fa-moon'></span>"
+      }
+    })
+    </script>
+
+    <!-- fix menubar JS -->
+    <script>
+
+      function menubar_fix() {     
+        let nav = document.querySelector(".container");
+        let trns = document.querySelector(".trans");
+
+       window.onscroll=function(){
+         if(window.scrollY>150){
+           nav.classList.add("nav-color");
+            trns.style.color = "white"
+         }else{
+            nav.classList.remove("nav-color");
+           trns.style.color = "orangered"
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
