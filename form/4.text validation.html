@@ -19,7 +19,7 @@
       <br /><br />
       Middle Name :-
       <input type="text" id="mname" />
-      <span id="mnm" style="color: red; font-size: 10px"></span>
+      <span id="m_nm" style="color: red; font-size: 10px"></span>
       <br /><br />
       <input type="submit" id="sbmt" />
     </form>
@@ -51,7 +51,7 @@
           mname1.focus();
           return false;
         } else if (!isNaN(mname1.value)) {
-          document.getElementById("mnm").innerHTML = "*Enter Alphabates*";
+          document.getElementById("m_nm").innerHTML = "*Enter Alphabates*";
           mname1.focus();
           return false;
         } else {
