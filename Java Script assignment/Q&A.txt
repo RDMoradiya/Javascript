@@ -1,6 +1,6 @@
 (1) what is JavaScript?
 Ans : 
-    JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and       pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
+    JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
 (2) what is the use of isNaN function?
 Ans : 
@@ -38,7 +38,7 @@ Ans :
 
 (10) how to read and write a file using JavaScript?
 Ans : 
-    eadFile() and rs. writeFile() methods are used to read and write of a file using javascript. The file is read using the fs. readFile() function, which is an inbuilt method.
+    ReadFile() and rs. writeFile() methods are used to read and write of a file using javascript. The file is read using the fs. readFile() function, which is an inbuilt method.
 
 (11) what are all the looping structure in javascript?
 Ans : 
