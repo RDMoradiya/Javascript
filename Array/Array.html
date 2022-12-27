@@ -13,14 +13,14 @@
     -> Array indexes start with 0. 
     -> [0] is the first element. [1] is the second element.
 
-    syntax :-
+    syntax 1 :-
      let cars= []
      cars[0]="Moradiya"
      cars[1]="Raj"
      cars[2]="dahyabhai"
       console.log(cars[1]);
 
-    syntax :-
+    syntax 2 :-
     let cars=["volvo","bmw","saab"]   
     document.getElementById("cars").innerHTML = cars[0]; -->
 
@@ -38,40 +38,75 @@
 
     syntax :-
     let cars = new Array("Saab", "Volvo", "BMW");
-    document.getElementById("demo").innerHTML = cars;
-    
-    -->
+    document.getElementById("demo").innerHTML = cars; -->
+
+  <!-- Changing an Array Element :-
+    syntax :-
+
+    let fruit = ["banana", "greps", "appple"];
+    cars[0] = "mango";
+    document.getElementById("demo").innerHTML = cars; -->
+
+  <!-- Arrays are Objects :-
+    syntax :-
+    const person = {firstName:"John", lastName:"Doe", age:46};
+    document.getElementById("demo").innerHTML = person.firstName; -->
+
+  <!-- The length Property :-
+    syntax :-
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.length; -->
   <body>
     <!-- example-1 (sntax-1) -->
 
-    <p id="cars"></p>
-
-    <!-- example-2 (syntax-2) -->
-
-    <p id="car"></p>
-
-    <!-- example-1 (syntax-2) -->
-
-    <p id="phone"></p>
-
+    <p id="name"></p>
     <script>
-      //   example-1 (sntax-1)
-
       let name = [];
       name[0] = "Moradiya";
       name[1] = "Raj";
       name[2] = "dahyabhai";
-      document.getElementById("car").innerHTML = name[0] + "<br>" + name[1];
+      document.getElementById("name").innerHTML = name[0] + "<br>" + name[1];
+    </script>
 
-      // example-2 (syntax-2)
+    <!-- example-2 (syntax-2) -->
 
+    <p id="cars"></p>
+    <script>
       let cars = ["volvo", "bmw", "saab"];
       document.getElementById("cars").innerHTML = cars[0];
+    </script>
 
-      // example-3 (new keyword using )
+    <!-- example-3 (new keyword using) -->
 
+    <p id="phone"></p>
+    <script>
       let phone = new Array("mi", "oppo", "vivo");
       document.getElementById("phone").innerHTML = phone;
+    </script>
+
+    <!-- example-4 (Changing an Array Element) -->
+
+    <p id="fruits"></p>
+    <script>
+      let fruits = ["apple", "mango", "kela"];
+      fruits[2] = "banana";
+      document.getElementById("fruits").innerHTML = fruits;
+    </script>
+
+    <!-- example-5 (Arrays are Objects) -->
+
+    <p id="demo"></p>
+    <script>
+      let person = { firstName: "John", lastName: "Doe", age: 46 };
+      document.getElementById("demo").innerHTML = person.age;
+    </script>
+
+    <!-- example-6 (Arrays are Objects) -->
+
+    <p id="demos"></p>
+    <script>
+      let fruit = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demos").innerHTML = fruit[2].length;
     </script>
   </body>
 </html>
