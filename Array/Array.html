@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <link rel="icon" href="../logo.png" />
+  </head>
+  <!-- Array :-
+    -> An array is a special variable, which can hold more than one value.
+    -> An array can hold many values under a single name, and you can access the values by referring to an index number.
+    -> Array indexes start with 0. 
+    -> [0] is the first element. [1] is the second element.
+
+    syntax :-
+     let cars= []
+     cars[0]="Moradiya"
+     cars[1]="Raj"
+     cars[2]="dahyabhai"
+      console.log(cars[1]);
+
+    syntax :-
+    let cars=["volvo","bmw","saab"]   
+    document.getElementById("cars").innerHTML = cars[0]; -->
+
+  <!-- Why Use Arrays?
+        If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+
+        let car1 = "Saab";
+        let car2 = "Volvo";
+        let car3 = "BMW";
+    However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?
+
+    The solution is an array! -->
+
+  <!-- Using the JavaScript Keyword new :-
+
+    syntax :-
+    let cars = new Array("Saab", "Volvo", "BMW");
+    document.getElementById("demo").innerHTML = cars;
+    
+    -->
+  <body>
+    <!-- example-1 (sntax-1) -->
+
+    <p id="cars"></p>
+
+    <!-- example-2 (syntax-2) -->
+
+    <p id="car"></p>
+
+    <!-- example-1 (syntax-2) -->
+
+    <p id="phone"></p>
+
+    <script>
+      //   example-1 (sntax-1)
+
+      let name = [];
+      name[0] = "Moradiya";
+      name[1] = "Raj";
+      name[2] = "dahyabhai";
+      document.getElementById("car").innerHTML = name[0] + "<br>" + name[1];
+
+      // example-2 (syntax-2)
+
+      let cars = ["volvo", "bmw", "saab"];
+      document.getElementById("cars").innerHTML = cars[0];
+
+      // example-3 (new keyword using )
+
+      let phone = new Array("mi", "oppo", "vivo");
+      document.getElementById("phone").innerHTML = phone;
+    </script>
+  </body>
+</html>
