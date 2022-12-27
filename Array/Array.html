@@ -61,10 +61,6 @@
     const person = {firstName:"John", lastName:"Doe", age:46};
     document.getElementById("demo").innerHTML = person.firstName; -->
 
-  <!-- The length Property :-
-    syntax :-
-    const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    document.getElementById("demo").innerHTML = fruits.length; -->
   <body>
     <!-- example-1 (sntax-1) -->
 
@@ -110,12 +106,12 @@
       document.getElementById("demo").innerHTML = person.age;
     </script>
 
-    <!-- example-6 (The length Property) -->
+    <!-- example-6 (Accessing the Last Array Element) -->
 
-    <p id="demos"></p>
+    <p id="demo1"></p>
     <script>
-      let fruit = ["Banana", "Orange", "Apple", "Mango"];
-      document.getElementById("demos").innerHTML = fruit[2].length;
+      var fru = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fru[fru.length - 1];
     </script>
   </body>
 </html>
