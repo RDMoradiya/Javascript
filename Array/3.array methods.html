@@ -332,7 +332,21 @@
     <!-- slice() :-
         The slice() method slices out a piece of an array into a new array.
         The slice() method creates a new array.
-        The slice() method does not remove any elements from the source array.-->
+        The slice() method does not remove any elements from the source array.
+      
+      ex:-
+      let x = ["mango", "apple", "pineapple", "abcs"];
+      let y = x.slice(1, 2);
+      document.getElementById("idname").innerHTML = y;
+
+
+      output:-
+
+      apple
+
+      note:- 
+      
+      as shown above (1,2) means remove 1st item from the start and remove 2 item after 2 item from the start -->
 
     <hr />
     <h1>slice() :-</h1>
@@ -348,39 +362,43 @@
     <p id="dm13dszq"></p>
 
     <script>
-      let abcsc = ["mango", "apple", "pineapple", "mango"];
+      let abcsc = ["mango", "apple", "pineapple", "abc"];
       document.getElementById("em13dszq").innerHTML = abcsc;
-      let cvbs = abcsc.slice(1, 2);
+      let cvbs = abcsc.slice(1);
       document.getElementById("dem13dszq").innerHTML = cvbs;
       let cv1bs = abcsc.slice(1, 3);
       document.getElementById("dm13dszq").innerHTML = cv1bs;
     </script>
 
-    <!-- slice() :-
-        The slice() method slices out a piece of an array into a new array.
-        The slice() method creates a new array.
-        The slice() method does not remove any elements from the source array.-->
+    <!-- splice() :-
+        The splice() method adds new items to an array.
+      ex:-
+      let x = ["mango", "apple", "pineapple", "papita"];
+      x.splice(0, 4, "mi", "vivo");
+      document.getElementById("idname").innerHTML = x;
+
+      output:-
+
+      mi,vivo
+
+      note:- 
+      
+      as shown above (0,4) means add mi/vivo after 0(zero) and delet 4 item after adding mi/vivo start -->
 
     <hr />
-    <h1>slice() :-</h1>
+    <h1>splice() :-</h1>
     <hr />
     <span style="color: red"
-      >The slice() method slices out a piece of an array into a new array.
-      <br />
-      The slice() method creates a new array. <br />
-      The slice() method does not remove any elements from the source array.
+      >The splice() method adds new items to an array.
     </span>
-    <p id="em13d1szq"></p>
-    <p id="dem131dszq"></p>
-    <p id="dm131dszq"></p>
+    <p id="e1m13d1szq"></p>
+    <p id="d1em131dszq"></p>
 
     <script>
-      let cscsc = ["mango", "apple", "pineapple", "mango"];
-      document.getElementById("em13d1szq").innerHTML = cscsc;
-      let dfbfd = cscsc.splice(1, 2);
-      document.getElementById("dem131dszq").innerHTML = dfbfd;
-      let dsvdv = cscsc.splice(1, 3);
-      document.getElementById("dm131dszq").innerHTML = dsvdv;
+      let c1scsc = ["mango", "apple", "pineapple", "papita"];
+      document.getElementById("e1m13d1szq").innerHTML = c1scsc;
+      c1scsc.splice(1, 2, "mi", "vivo");
+      document.getElementById("d1em131dszq").innerHTML = c1scsc;
     </script>
   </body>
 </html>

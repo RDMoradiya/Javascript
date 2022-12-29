@@ -48,6 +48,32 @@
     --> The slice() method creates a new array.
     --> The slice() method does not remove any elements from the source array.
 
+    --> ex:-
+      let x = ["mango", "apple", "pineapple", "abcs"];
+      let y = x.slice(1, 2);
+      document.getElementById("idname").innerHTML = y;
+
+
+      output:-
+
+      apple
+
+      note:- 
+      
+      as shown above (1,2) means remove 1st item from the start and remove 2 item after 2 item from the start.
+
 16 --> splice() :-
     --> The splice() method adds new items to an array.
-    --> The slice() method slices out a piece of an array.
+
+    --> ex:-
+      let x = ["mango", "apple", "pineapple", "papita"];
+      x.splice(0, 4, "mi", "vivo");
+      document.getElementById("idname").innerHTML = x;
+
+      output:-
+
+      mi,vivo
+
+      note:- 
+      
+      as shown above (0,4) means add mi/vivo after 0(zero) and delet 4 item after adding mi/vivo start.
