@@ -47,3 +47,7 @@
     --> The slice() method slices out a piece of an array into a new array.
     --> The slice() method creates a new array.
     --> The slice() method does not remove any elements from the source array.
+
+16 --> splice() :-
+    --> The splice() method adds new items to an array.
+    --> The slice() method slices out a piece of an array.
