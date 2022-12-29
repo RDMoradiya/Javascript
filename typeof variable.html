@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typeof</title>
+    <link rel="icon" href="logo.png" />
+  </head>
+  <body>
+    <h1 id="type1"></h1>
+    <h1 id="type2"></h1>
+    <h1 id="type3"></h1>
+    <h1 id="type4"></h1>
+    <h1 id="type5"></h1>
+    <h1 id="type6"></h1>
+    <h1 id="type7"></h1>
+    <script>
+      let x = "apple";
+      let y = 25;
+      let z = true;
+      let a;
+      let b = ["mango", "apple"];
+      let c = { first: "mango", second: "apple" };
+      let f = null;
+      document.getElementById("type1").innerHTML = typeof x;
+      document.getElementById("type2").innerHTML = typeof y;
+      document.getElementById("type3").innerHTML = typeof z;
+      document.getElementById("type4").innerHTML = typeof a;
+      document.getElementById("type5").innerHTML = typeof b;
+      document.getElementById("type6").innerHTML = typeof c;
+      document.getElementById("type7").innerHTML = typeof f;
+    </script>
+  </body>
+</html>
