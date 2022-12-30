@@ -1,0 +1,12 @@
+
+****************** DOM (document object method) ***************
+
+*** DOM Method*****
+
+1 --> getElementById
+2 --> getElementsByClassName
+3 --> querySelector
+4 --> getElementsByName
+5 --> getElementsByTagName
+6 --> innerHTML - display in HTML structure. 
+7 --> innerText - display text in particular element
