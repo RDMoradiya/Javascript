@@ -43,7 +43,10 @@ Ans :
 (11) what are all the looping structure in javascript?
 Ans : 
     Different Kinds of Loops
-        for/in - loops through the properties of an object. for/of - loops through the values of an iterable object. while - loops through a block of code while a specified condition is true. do/while - also loops through a block of code while a specified condition is true.
+        for/in - loops through the properties of an object.
+        for/of - loops through the values of an iterable object. 
+        while - loops through a block of code while a specified condition is true. 
+        do/while - also loops through a block of code while a specified condition is true.
 
 (12) how can you convert the string of any base to in integer in javascript?
 Ans : 
