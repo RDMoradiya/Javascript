@@ -1,5 +1,5 @@
 
-****************** DOM (document object method) ***************
+****************** DOM (document object model) ***************
 
 *** DOM Method*****
 
