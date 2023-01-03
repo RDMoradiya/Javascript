@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Table</title>
+    <link rel="icon" href="logo.png" />
+  </head>
+
+  <body>
+    <label for="">Enter Number :-</label>
+    <input type="text" onkeyup="table(this)" id="num" />
+    <span id="result" style="color: red"></span>
+    <br /><br />
+    <button onclick="show()">Show Table</button>
+  </body>
+  <script>
+    function table(number) {
+      let x = document.getElementById("num").value;
+      document.getElementById("result").innerHTML = x;
+      if (isNaN(number.value)) {
+        document.getElementById("result").innerHTML = "Enter number only";
+        return false;
+      } else {
+        document.getElementById("result").innerHTML = "";
+      }
+    }
+    function show() {
+      let y = document.getElementById("num").value;
+      for (let i = 1; i <= 10; i++) {
+        document.write(y + " x " + i + " = " + i * y + "<br>");
+      }
+    }
+  </script>
+</html>
