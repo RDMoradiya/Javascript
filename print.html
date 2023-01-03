@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Page</title>
+    <link rel="icon" href="logo.png" />
+    <style>
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="bdy">
+    <div>
+      <img src="logo.png" alt="" />
+      <hr />
+      <p id="data">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit assumenda
+        provident hic explicabo qui harum dolor minima reiciendis non suscipit
+        mollitia quisquam nam necessitatibus quod doloremque facere dolorum,
+        possimus ipsa? Temporibus nemo impedit, officia sed laudantium ipsum,
+        rem illum dignissimos at accusamus cum sunt quam qui nulla quo minima
+        esse magni ipsam eum omnis, aperiam iure! Ipsa, accusamus assumenda?
+        Repellendus. Quos blanditiis adipisci cumque omnis. Quia, consequatur
+        voluptates sequi cupiditate minus vero commodi, debitis tempore cum ut,
+        quo neque harum. Officiis dicta consectetur deleniti fuga assumenda hic
+        porro nihil nesciunt. Eum earum corrupti perferendis molestiae enim
+        rerum minima optio ratione facilis obcaecati maxime, ex ab veniam et ut
+        magni! Ex, fugiat. Culpa temporibus ex, aut nemo rerum nostrum possimus
+        assumenda? Et nisi odit vero, ut corporis animi distinctio dicta fuga
+        excepturi itaque atque reiciendis rerum voluptatem ipsa! Ab
+        exercitationem iste possimus libero molestias beatae necessitatibus
+        asperiores delectus? Impedit, deserunt facere. Obcaecati nobis ex
+        distinctio numquam vel rerum praesentium dolor, repellat sit accusantium
+        sequi temporibus consequatur, dolorum qui saepe totam soluta recusandae?
+        Minus harum vel fugit nisi iure mollitia quas illum? Iure earum
+        aspernatur explicabo molestiae amet ipsum eum necessitatibus et. Atque
+        alias non aut illo nihil inventore est tenetur officiis totam deserunt
+        veniam blanditiis dolor minus, quasi facilis? Facilis, pariatur? A natus
+        perspiciatis ducimus expedita vitae corrupti blanditiis harum esse rerum
+        vero eaque tempore laudantium nisi quam suscipit, similique dolorum
+        provident maxime perferendis nulla mollitia ratione illum. Quae, nulla
+        magnam!
+      </p>
+      <hr />
+      <p id="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nesciunt
+        natus tenetur nisi neque omnis architecto deserunt optio reiciendis,
+        ipsum iure eveniet quisquam iusto mollitia ipsam impedit? Consectetur,
+        corporis cum! Possimus placeat nobis qui minima, sequi fugit sit
+        perferendis omnis voluptates a eos accusantium cupiditate nesciunt
+        veritatis nihil veniam fugiat quo voluptatibus odit, labore temporibus
+        harum. Earum nesciunt doloribus tenetur. Libero, illo accusantium nulla
+        itaque non possimus iure optio in sequi mollitia quod unde consequatur
+        ea est provident nihil hic modi animi. Nesciunt enim inventore tenetur
+        necessitatibus. Eveniet, totam enim. Pariatur, maxime culpa laudantium
+        debitis esse quam, velit in sunt aspernatur sit adipisci. Beatae quidem
+        quod nihil nemo neque hic repudiandae dignissimos laborum iusto,
+        corporis error placeat facere fuga architecto! Quos blanditiis est error
+        explicabo eius reiciendis laborum consequatur odit doloribus nesciunt
+        eaque repellat nobis provident optio, quam dolore, impedit ab deserunt
+        ad ipsum doloremque necessitatibus. Quisquam cumque a tenetur.
+      </p>
+      <hr />
+      <br />
+      <button onclick="printpage()">Print content</button>
+      <button onclick="pageprint()">Print</button>
+    </div>
+    <script>
+      function printpage() {
+        let abc = document.getElementById("bdy").innerHTML;
+        let xyz = document.getElementById("data").innerHTML;
+        document.getElementById("bdy").innerHTML = xyz;
+        window.print();
+        document.getElementById("bdy").innerHTML = abc;
+      }
+      function pageprint() {
+        window.print();
+      }
+    </script>
+  </body>
+</html>
