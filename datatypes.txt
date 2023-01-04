@@ -1,4 +1,8 @@
 
+******************** Data Types :- ******************
+
+1 --> Primitive         (string,number,boolean,null,undefined)
+2 --> Non Primitive     (object,array,reguler expression)
 
 var x = "hello world"; ------------------------------- string
 var x = 25; ------------------------------------------ number
